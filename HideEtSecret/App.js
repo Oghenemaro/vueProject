@@ -52,13 +52,10 @@ const Navs = createAppContainer(SwitchNavigator);
 class App extends React.Component {
   render() {
     return (
-      <Navs/>
+      <Navs style={styles.container}/>
     );
   }
 }
-
-export default App;
-
 
 const styles = StyleSheet.create({
   container: {
@@ -66,5 +63,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    fontSize: 30,
+    fontFamily: 'Times New Roman '
   },
 });
+
+export default App;
+
